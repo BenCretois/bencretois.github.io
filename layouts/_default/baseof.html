@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    <meta name="description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- SEO and Meta Tags -->
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}">
+    <meta property="og:description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+
+    <link rel="canonical" href="{{ .Permalink }}">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav-brand">{{ .Site.Title }}</a>
+            <ul class="nav-menu">
+                {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                    <a href="{{ .URL }}" class="nav-link{{ if eq $.RelPermalink .URL }} active{{ end }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email
+                            }}</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> {{ .Site.Params.location }}</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/{{ .Site.Params.github }}" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        {{ if .Site.Params.bluesky }}
+                        <a href="https://bsky.app/profile/{{ .Site.Params.bluesky }}" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-bluesky"></i>
+                        </a>
+                        {{ end }}
+                        <a href="#" target="_blank" rel="noopener">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <p>AI • Bioacoustics • Conservation</p>
+                    <p>Norwegian Institute for Nature Research</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; {{ now.Year }} {{ .Site.Title }}. Built with Hugo.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

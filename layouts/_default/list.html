@@ -1,0 +1,106 @@
+{{ define "main" }}
+<div class="container">
+    <header class="page-header">
+        <h1>{{ .Title }}</h1>
+        {{ if .Params.description }}
+        <p class="page-description">{{ .Params.description }}</p>
+        {{ end }}
+    </header>
+
+    <div class="content">
+        {{ .Content }}
+    </div>
+
+    {{ if eq .Section "projects" }}
+
+    <!-- Present Projects -->
+    {{ $presentProjects := where .Pages "Params.status" "present" }}
+    {{ if $presentProjects }}
+    <section class="projects-section">
+        <h2 class="section-heading">🚀 Present Projects</h2>
+        <div class="projects-grid">
+            {{ range $presentProjects }}
+            <div class="project-card">
+                {{ if .Params.category }}
+                <span class="project-category">{{ .Params.category }}</span>
+                {{ end }}
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                {{ if .Params.subtitle }}
+                <p class="project-subtitle">{{ .Params.subtitle }}</p>
+                {{ end }}
+                {{ if .Params.description }}
+                <p>{{ .Params.description }}</p>
+                {{ end }}
+                <div class="project-links">
+                    {{ if .Params.learn_more }}
+                    <a href="{{ .RelPermalink }}" class="btn btn-primary">Learn More</a>
+                    {{ end }}
+                    {{ if .Params.github_url }}
+                    <a href="{{ .Params.github_url }}" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                    {{ end }}
+                    {{ if .Params.demo_url }}
+                    <a href="{{ .Params.demo_url }}" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-external-link-alt"></i> Demo
+                    </a>
+                    {{ end }}
+                    {{ if .Params.website }}
+                    <a href="{{ .Params.website }}" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-globe"></i> Website
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
+    <!-- Past Projects -->
+    {{ $pastProjects := where .Pages "Params.status" "past" }}
+    {{ if $pastProjects }}
+    <section class="projects-section">
+        <h2 class="section-heading">📚 Past Projects</h2>
+        <div class="projects-grid">
+            {{ range $pastProjects }}
+            <div class="project-card">
+                {{ if .Params.category }}
+                <span class="project-category">{{ .Params.category }}</span>
+                {{ end }}
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                {{ if .Params.subtitle }}
+                <p class="project-subtitle">{{ .Params.subtitle }}</p>
+                {{ end }}
+                {{ if .Params.description }}
+                <p>{{ .Params.description }}</p>
+                {{ end }}
+                <div class="project-links">
+                    {{ if .Params.learn_more }}
+                    <a href="{{ .RelPermalink }}" class="btn btn-primary">Learn More</a>
+                    {{ end }}
+                    {{ if .Params.github_url }}
+                    <a href="{{ .Params.github_url }}" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                    {{ end }}
+                    {{ if .Params.demo_url }}
+                    <a href="{{ .Params.demo_url }}" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-external-link-alt"></i> Demo
+                    </a>
+                    {{ end }}
+                    {{ if .Params.website }}
+                    <a href="{{ .Params.website }}" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-globe"></i> Website
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
+    {{ end }}
+</div>
+{{ end }}
