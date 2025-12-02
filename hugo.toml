@@ -1,0 +1,37 @@
+baseURL = 'https://bencretois.github.io'
+languageCode = 'en-us'
+title = 'Benjamin Cretois'
+
+[params]
+  author = 'Benjamin Cretois'
+  description = 'AI Researcher at NINA working with biodiversity conservation and bioacoustics'
+  email = 'benjamin.cretois@nina.no'
+  location = 'Trondheim, Norway'
+  github = 'BenCretois'
+  linkedin = 'benjamin-cretois-187a9483'
+  bluesky = 'bencretois.bsky.social'
+  
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = 'Projects'
+    url = '/projects/'
+    weight = 2
+  [[menu.main]]
+    name = 'Publications'
+    url = 'https://scholar.google.com/citations?user=40ZX7XUAAAAJ&hl=en&oi=ao'
+    weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[imaging]
+  quality = 85
