@@ -5,7 +5,7 @@ category: "Restoration"
 date: 2024-01-01
 status: "present"
 tags: ["climate change", "carbon sequestration", "peatlands", "forest management", "AI", "robotics"]
-website: "https://cordis.europa.eu/project/id/101219060"
+website: "https://www.forpeat.eu/partners"
 weight: 3
 ---
 
