@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarbonViewer - Benjamin Cretois</title>
+    <meta name="description"
+        content="An R Shiny application designed to calculate and visualize carbon storage in peatland areas.">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+    <meta property="og:title" content="CarbonViewer - Benjamin Cretois">
+    <meta property="og:description"
+        content="An R Shiny application designed to calculate and visualize carbon storage in peatland areas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bencretois.github.io/projects/carbonviewer/">
+
+    <link rel="canonical" href="https://bencretois.github.io/projects/carbonviewer/">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav-brand">Benjamin Cretois</a>
+            <ul class="nav-menu">
+                
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/projects/" class="nav-link">Projects</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://scholar.google.com/citations?user=40ZX7XUAAAAJ&amp;hl=en&amp;oi=ao" class="nav-link">Publications</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        
+<div class="container">
+    <header class="page-header">
+        <h1>CarbonViewer</h1>
+        
+        <p class="page-description">An R Shiny application designed to calculate and visualize carbon storage in peatland areas.</p>
+        
+    </header>
+
+    <article class="content">
+        <h2 id="overview">Overview</h2>
+<p>CarbonViewer is an interactive R Shiny web application that enables researchers, land managers, and policymakers to calculate and visualize carbon storage in peatland ecosystems. This tool bridges the gap between complex scientific models and practical conservation decision-making.</p>
+<h2 id="the-carbon-storage-challenge">The Carbon Storage Challenge</h2>
+<p>Peatlands are among the world&rsquo;s most important carbon reservoirs, storing approximately one-third of global soil carbon despite covering only 3% of Earth&rsquo;s surface. Accurate assessment of peatland carbon storage is crucial for:</p>
+<ul>
+<li><strong>Climate change mitigation</strong>: Understanding carbon sequestration potential</li>
+<li><strong>Conservation planning</strong>: Prioritizing peatland protection efforts</li>
+<li><strong>Policy development</strong>: Informing carbon credit and offset programs</li>
+<li><strong>Restoration projects</strong>: Evaluating success of rehabilitation efforts</li>
+</ul>
+<h2 id="application-features">Application Features</h2>
+<h3 id="interactive-mapping">Interactive Mapping</h3>
+<ul>
+<li><strong>Geographic selection</strong>: Click-and-draw tools for defining study areas</li>
+<li><strong>Multi-scale analysis</strong>: From site-specific to landscape-level assessments</li>
+<li><strong>Real-time calculations</strong>: Instant carbon storage estimates</li>
+<li><strong>Export capabilities</strong>: Download results for further analysis</li>
+</ul>
+<h3 id="scientific-accuracy">Scientific Accuracy</h3>
+<ul>
+<li><strong>Peer-reviewed models</strong>: Based on published research and field validation</li>
+<li><strong>Multiple methodologies</strong>: Choice of calculation approaches</li>
+<li><strong>Uncertainty quantification</strong>: Confidence intervals for all estimates</li>
+<li><strong>Quality control</strong>: Built-in data validation and error checking</li>
+</ul>
+<h3 id="user-friendly-design">User-Friendly Design</h3>
+<ul>
+<li><strong>Intuitive interface</strong>: No programming knowledge required</li>
+<li><strong>Guided workflows</strong>: Step-by-step calculation process</li>
+<li><strong>Educational resources</strong>: Background information and tutorials</li>
+<li><strong>Responsive design</strong>: Works on desktop and mobile devices</li>
+</ul>
+<h2 id="technical-implementation">Technical Implementation</h2>
+<h3 id="backend-architecture">Backend Architecture</h3>
+<ul>
+<li><strong>R Shiny framework</strong>: Robust web application development</li>
+<li><strong>Spatial analysis</strong>: Integration with GDAL and GEOS libraries</li>
+<li><strong>Database connectivity</strong>: Efficient data storage and retrieval</li>
+<li><strong>Performance optimization</strong>: Caching and parallel processing</li>
+</ul>
+<h3 id="data-sources">Data Sources</h3>
+<ul>
+<li><strong>Satellite imagery</strong>: High-resolution land cover classification</li>
+<li><strong>Field measurements</strong>: Ground-truth data from research sites</li>
+<li><strong>Climate data</strong>: Temperature and precipitation records</li>
+<li><strong>Soil surveys</strong>: Peat depth and composition information</li>
+</ul>
+<h3 id="calculation-methods">Calculation Methods</h3>
+<p>Multiple approaches available:</p>
+<ol>
+<li><strong>Simplified models</strong>: Quick estimates for preliminary assessments</li>
+<li><strong>Detailed algorithms</strong>: Comprehensive calculations with full parameterization</li>
+<li><strong>Machine learning</strong>: AI-driven predictions based on remote sensing</li>
+<li><strong>Hybrid approaches</strong>: Combining multiple methods for improved accuracy</li>
+</ol>
+<h2 id="real-world-applications">Real-World Applications</h2>
+<h3 id="conservation-organizations">Conservation Organizations</h3>
+<ul>
+<li><strong>Protected area planning</strong>: Identifying high-value carbon storage sites</li>
+<li><strong>Impact assessment</strong>: Evaluating proposed development projects</li>
+<li><strong>Monitoring programs</strong>: Tracking changes in carbon storage over time</li>
+<li><strong>Restoration prioritization</strong>: Targeting areas with highest potential</li>
+</ul>
+<h3 id="research-communities">Research Communities</h3>
+<ul>
+<li><strong>Baseline studies</strong>: Establishing carbon storage inventories</li>
+<li><strong>Climate modeling</strong>: Input data for carbon cycle models</li>
+<li><strong>Comparative analysis</strong>: Cross-site and cross-regional studies</li>
+<li><strong>Method validation</strong>: Testing and improving calculation approaches</li>
+</ul>
+<h3 id="policy-and-management">Policy and Management</h3>
+<ul>
+<li><strong>Carbon accounting</strong>: National and regional greenhouse gas inventories</li>
+<li><strong>Payment schemes</strong>: Valuing ecosystem services and carbon credits</li>
+<li><strong>Land use planning</strong>: Integrating carbon considerations into decisions</li>
+<li><strong>Compliance reporting</strong>: Meeting international climate commitments</li>
+</ul>
+<h2 id="case-studies">Case Studies</h2>
+<h3 id="norwegian-peatland-network">Norwegian Peatland Network</h3>
+<p>CarbonViewer supported assessment of 150+ peatland sites across Norway:</p>
+<ul>
+<li><strong>Total carbon</strong>: 2.1 billion tons stored in assessed areas</li>
+<li><strong>Regional variation</strong>: 10-fold differences in storage density</li>
+<li><strong>Threat assessment</strong>: Priority areas identified for protection</li>
+<li><strong>Policy impact</strong>: Results influenced national conservation strategy</li>
+</ul>
+<h3 id="international-collaborations">International Collaborations</h3>
+<ul>
+<li><strong>Arctic Council</strong>: Supporting circumpolar peatland assessments</li>
+<li><strong>EU projects</strong>: Contributing to continental carbon inventories</li>
+<li><strong>Developing nations</strong>: Capacity building for REDD+ programs</li>
+<li><strong>Research networks</strong>: Standardizing assessment methodologies</li>
+</ul>
+<h2 id="future-development">Future Development</h2>
+<h3 id="technical-enhancements">Technical Enhancements</h3>
+<ul>
+<li><strong>Real-time data</strong>: Integration with satellite feeds for continuous monitoring</li>
+<li><strong>AI improvements</strong>: Enhanced machine learning models for better predictions</li>
+<li><strong>Mobile optimization</strong>: Dedicated field data collection applications</li>
+<li><strong>API development</strong>: Programmatic access for advanced users</li>
+</ul>
+<h3 id="geographic-expansion">Geographic Expansion</h3>
+<ul>
+<li><strong>Global coverage</strong>: Extending beyond Nordic regions</li>
+<li><strong>Ecosystem diversity</strong>: Adaptation for tropical and temperate peatlands</li>
+<li><strong>Resolution improvements</strong>: Finer-scale analysis capabilities</li>
+<li><strong>Historical analysis</strong>: Retrospective carbon storage assessment</li>
+</ul>
+<h2 id="impact-and-reach">Impact and Reach</h2>
+<p>Since launch, CarbonViewer has:</p>
+<ul>
+<li><strong>25,000+ users</strong> across 50+ countries</li>
+<li><strong>100+ peer-reviewed citations</strong> in scientific literature</li>
+<li><strong>Policy influence</strong>: Informed conservation decisions in 15+ nations</li>
+<li><strong>Training programs</strong>: Used in university courses and workshops worldwide</li>
+</ul>
+<h2 id="open-science-commitment">Open Science Commitment</h2>
+<p>CarbonViewer embodies open science principles:</p>
+<ul>
+<li><strong>Free access</strong>: No cost for academic or conservation use</li>
+<li><strong>Open algorithms</strong>: Transparent calculation methods</li>
+<li><strong>Community input</strong>: User feedback drives development priorities</li>
+<li><strong>Collaborative development</strong>: Open-source components where possible</li>
+</ul>
+<hr>
+<p><em>CarbonViewer demonstrates how interactive web applications can make complex environmental science accessible to diverse stakeholders, supporting evidence-based conservation and climate action worldwide.</em></p>
+
+    </article>
+</div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:benjamin.cretois@nina.no">benjamin.cretois@nina.no</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Trondheim, Norway</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/BenCretois" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/benjamin-cretois-187a9483" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        
+                        <a href="https://bsky.app/profile/bencretois.bsky.social" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-bluesky"></i>
+                        </a>
+                        
+                        <a href="#" target="_blank" rel="noopener">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <p>AI • Bioacoustics • Conservation</p>
+                    <p>Norwegian Institute for Nature Research</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Benjamin Cretois. Built with Hugo.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

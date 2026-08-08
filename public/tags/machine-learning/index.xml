@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning on Benjamin Cretois</title>
+    <link>https://bencretois.github.io/tags/machine-learning/</link>
+    <description>Recent content in machine learning on Benjamin Cretois</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bencretois.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ROaR</title>
+      <link>https://bencretois.github.io/projects/roar/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/roar/</guid>
+      <description>Did you hear that? What was that? The questions posed above immediately activate our minds, prompting quick answers like &amp;ldquo;It&amp;rsquo;s just a car on the road&amp;rdquo; or &amp;ldquo;That must be a rare bird.&amp;rdquo; Most of the time, we don&amp;rsquo;t even consciously ask or think about what we heard. We instinctively recognize the sound - whether it&amp;rsquo;s a car, a bird, or something else.
+Artificial intelligence (AI) is also capable of recognizing sounds automatically, but teaching this skill to AI is often not feasible.</description>
+    </item>
+    
+  </channel>
+</rss>

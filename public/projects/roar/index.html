@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROaR - Benjamin Cretois</title>
+    <meta name="description"
+        content="Creating models that can generalise to other classes with not much annotations">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+    <meta property="og:title" content="ROaR - Benjamin Cretois">
+    <meta property="og:description"
+        content="Creating models that can generalise to other classes with not much annotations">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bencretois.github.io/projects/roar/">
+
+    <link rel="canonical" href="https://bencretois.github.io/projects/roar/">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav-brand">Benjamin Cretois</a>
+            <ul class="nav-menu">
+                
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/projects/" class="nav-link">Projects</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://scholar.google.com/citations?user=40ZX7XUAAAAJ&amp;hl=en&amp;oi=ao" class="nav-link">Publications</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        
+<div class="container">
+    <header class="page-header">
+        <h1>ROaR</h1>
+        
+        <p class="page-description">Creating models that can generalise to other classes with not much annotations</p>
+        
+    </header>
+
+    <article class="content">
+        <h2 id="did-you-hear-that-what-was-that">Did you hear that? What was that?</h2>
+<p>The questions posed above immediately activate our minds, prompting quick answers like &ldquo;It&rsquo;s just a car on the road&rdquo; or &ldquo;That must be a rare bird.&rdquo; Most of the time, we don&rsquo;t even consciously ask or think about what we heard. We instinctively recognize the sound - whether it&rsquo;s a car, a bird, or something else.</p>
+<p>Artificial intelligence (AI) is also capable of recognizing sounds automatically, but teaching this skill to AI is often not feasible. Collecting enough data to train AI systems to identify every relevant sound source in every possible context is often prohibitively expensive. Unlike humans, who can grasp the general concept of a sound after just a few examples, AI requires vast amounts of data and repeated training to identify each sound properly. <strong>ROaR aims to close this gap and lower the costs of implementing AI-powered sound recognition</strong> across a wide range of applications.</p>
+<h2 id="-sound-contains-information-and-information-has-value">🎵 Sound contains information, and information has value</h2>
+<p>This opens up numerous potential applications where sound monitoring is critical. For instance, environmental noise monitoring is a crucial first step in noise control, which we desperately need because, in Western Europe alone, noise pollution costs over a million healthy life years (DALYs) each year. Sound monitoring can also be used to track nature and biodiversity, helping us evaluate whether our restoration efforts are having the desired impact or guiding us to where further efforts will have the most impact.</p>
+<p>At the heart of sound monitoring is the ability to recognize sound sources. This is something we, as humans, start learning early - before we&rsquo;re even born. The good news is, we can teach machines to do the same. With the right data, AI can become highly proficient at recognizing sounds. The best part? These systems can operate continuously, even in hazardous environments.</p>
+<h2 id="-transfer-learning">🔄 Transfer learning</h2>
+<p>However, while large language models (LLMs) are transforming how we work with text, and computer vision models excel at interpreting images, AI still struggles with sound. Transfer learning - one of the key techniques in machine learning that enables a model trained on one task to be adapted to another - doesn&rsquo;t perform as well with audio. Audio classification models often fail to generalize across different contexts. Simply put: <strong>Change of application? Start training from scratch.</strong></p>
+<h2 id="-create-a-service-that-enables-easy-development-of-sound-monitoring-systems">🎯 Create a service that enables easy development of sound monitoring systems</h2>
+<p>This means audio classification technology is too expensive for most. It requires too much manual labour for each new application. This is where <strong>RoAR</strong> comes in: <strong>Robust Acoustic Recognition</strong>. Rather than developing a new sound classification system for each individual application, ROaR aims to create a service that enables the easy development of sound monitoring systems with minimal manual effort.</p>
+<p>How do we get the most out of each and every labelled datapoint? We&rsquo;ll explore everything from:</p>
+<ul>
+<li><strong>Audio representation</strong>: What do we feed our models?</li>
+<li><strong>Data augmentation</strong>: How do we teach AI about sound propagation?</li>
+<li><strong>Distributions/clustering</strong>: Which clips sound similar, and which don&rsquo;t?</li>
+<li><strong>Active learning</strong>: Which samples will provide the most useful new information for my system?</li>
+</ul>
+<p>The research will cover a variety of use cases, including both urban noise and biodiversity datasets, to ensure broad applicability.</p>
+<h2 id="key-innovations">Key Innovations</h2>
+<ul>
+<li><strong>Few-shot learning</strong>: Effective sound recognition with minimal training data</li>
+<li><strong>Cross-domain adaptation</strong>: Models that work across different acoustic environments</li>
+<li><strong>Active learning strategies</strong>: Smart data selection for maximum learning efficiency</li>
+<li><strong>Unified framework</strong>: One platform for diverse acoustic monitoring applications</li>
+</ul>
+
+    </article>
+</div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:benjamin.cretois@nina.no">benjamin.cretois@nina.no</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Trondheim, Norway</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/BenCretois" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/benjamin-cretois-187a9483" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        
+                        <a href="https://bsky.app/profile/bencretois.bsky.social" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-bluesky"></i>
+                        </a>
+                        
+                        <a href="#" target="_blank" rel="noopener">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <p>AI • Bioacoustics • Conservation</p>
+                    <p>Norwegian Institute for Nature Research</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Benjamin Cretois. Built with Hugo.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

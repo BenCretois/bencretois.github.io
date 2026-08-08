@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>habitat loss on Benjamin Cretois</title>
+    <link>https://bencretois.github.io/tags/habitat-loss/</link>
+    <description>Recent content in habitat loss on Benjamin Cretois</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bencretois.github.io/tags/habitat-loss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HABLOSS</title>
+      <link>https://bencretois.github.io/projects/habloss/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/habloss/</guid>
+      <description>HABLOSS is a research project where we are studying nature habitat loss using remote sensing data. By combining satellite imagery with AI methods, we aim to track habitat degradation and loss over time to better understand and mitigate its impact on biodiversity.</description>
+    </item>
+    
+  </channel>
+</rss>

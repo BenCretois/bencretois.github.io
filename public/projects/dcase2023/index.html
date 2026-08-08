@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCASE 2023 Challenge - Benjamin Cretois</title>
+    <meta name="description"
+        content="Few-shot bioacoustic event detection system for rare species monitoring using advanced deep learning techniques.">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+    <meta property="og:title" content="DCASE 2023 Challenge - Benjamin Cretois">
+    <meta property="og:description"
+        content="Few-shot bioacoustic event detection system for rare species monitoring using advanced deep learning techniques.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bencretois.github.io/projects/dcase2023/">
+
+    <link rel="canonical" href="https://bencretois.github.io/projects/dcase2023/">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav-brand">Benjamin Cretois</a>
+            <ul class="nav-menu">
+                
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/projects/" class="nav-link">Projects</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://scholar.google.com/citations?user=40ZX7XUAAAAJ&amp;hl=en&amp;oi=ao" class="nav-link">Publications</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        
+<div class="container">
+    <header class="page-header">
+        <h1>DCASE 2023 Challenge</h1>
+        
+        <p class="page-description">Few-shot bioacoustic event detection system for rare species monitoring using advanced deep learning techniques.</p>
+        
+    </header>
+
+    <article class="content">
+        <h2 id="overview">Overview</h2>
+<p>The DCASE 2023 Challenge presented a unique opportunity to advance the field of bioacoustic monitoring through few-shot learning. Our team developed an innovative approach to detect rare species vocalizations using minimal training data—a critical challenge in conservation biology where labeled data for endangered species is inherently scarce.</p>
+<h2 id="the-challenge">The Challenge</h2>
+<p>Traditional machine learning approaches require large amounts of labeled training data, which is often unavailable for rare or endangered species. The DCASE 2023 few-shot bioacoustic event detection task challenged participants to develop systems that could:</p>
+<ul>
+<li>Learn from very few examples (5-shot learning)</li>
+<li>Generalize to new species and environments</li>
+<li>Achieve robust performance across diverse acoustic conditions</li>
+<li>Handle class imbalance inherent in rare species data</li>
+</ul>
+<h2 id="our-approach">Our Approach</h2>
+<p>Our solution combined several cutting-edge techniques:</p>
+<h3 id="1-prototypical-networks">1. Prototypical Networks</h3>
+<p>We implemented prototypical networks specifically adapted for audio data, using spectral features to create robust species representations.</p>
+<h3 id="2-data-augmentation">2. Data Augmentation</h3>
+<ul>
+<li><strong>SpecAugment</strong>: Frequency and time masking to improve model robustness</li>
+<li><strong>Mixup</strong>: Blending audio samples to create synthetic training examples</li>
+<li><strong>Environmental simulation</strong>: Adding realistic background noise</li>
+</ul>
+<h3 id="3-feature-engineering">3. Feature Engineering</h3>
+<ul>
+<li>Mel-frequency cepstral coefficients (MFCCs)</li>
+<li>Spectral contrast features</li>
+<li>Chroma features for harmonic content analysis</li>
+</ul>
+<h2 id="results">Results</h2>
+<p>Our system achieved competitive performance in the challenge, demonstrating the effectiveness of combining domain-specific knowledge with modern few-shot learning techniques. The approach showed particular strength in:</p>
+<ul>
+<li>Handling highly variable acoustic environments</li>
+<li>Generalizing to unseen species</li>
+<li>Maintaining performance with extremely limited training data</li>
+</ul>
+<h2 id="impact">Impact</h2>
+<p>This work has direct applications for:</p>
+<ul>
+<li><strong>Wildlife monitoring</strong>: Automated detection systems for conservation</li>
+<li><strong>Biodiversity surveys</strong>: Large-scale acoustic monitoring programs</li>
+<li><strong>Endangered species tracking</strong>: Early warning systems for rare vocalizations</li>
+<li><strong>Ecosystem health assessment</strong>: Indicator species monitoring</li>
+</ul>
+<h2 id="future-directions">Future Directions</h2>
+<p>We&rsquo;re extending this work to:</p>
+<ul>
+<li>Real-time deployment in field conditions</li>
+<li>Integration with edge computing devices</li>
+<li>Expansion to multi-modal detection (audio + visual)</li>
+<li>Collaboration with conservation organizations for practical deployment</li>
+</ul>
+<hr>
+<p><em>This project represents collaborative work with the NINA research team and international partners in the bioacoustic monitoring community.</em></p>
+
+    </article>
+</div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:benjamin.cretois@nina.no">benjamin.cretois@nina.no</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Trondheim, Norway</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/BenCretois" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/benjamin-cretois-187a9483" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        
+                        <a href="https://bsky.app/profile/bencretois.bsky.social" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-bluesky"></i>
+                        </a>
+                        
+                        <a href="#" target="_blank" rel="noopener">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <p>AI • Bioacoustics • Conservation</p>
+                    <p>Norwegian Institute for Nature Research</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Benjamin Cretois. Built with Hugo.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

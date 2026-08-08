@@ -4,6 +4,7 @@ description: "Sustainable Forest Practices and Nature Restoration on Peat Soils,
 category: "Restoration"
 date: 2024-01-01
 status: "present"
+funded: true
 tags: ["climate change", "carbon sequestration", "peatlands", "forest management", "AI", "robotics"]
 website: "https://www.forpeat.eu/partners"
 weight: 3

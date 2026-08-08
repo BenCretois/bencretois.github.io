@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Benjamin Cretois</title>
+    <link>https://bencretois.github.io/</link>
+    <description>Recent content on Benjamin Cretois</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bencretois.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TABMON</title>
+      <link>https://bencretois.github.io/projects/tabmon/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/tabmon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DCASE 2023 Challenge</title>
+      <link>https://bencretois.github.io/projects/dcase2023/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/dcase2023/</guid>
+      <description>Overview The DCASE 2023 Challenge presented a unique opportunity to advance the field of bioacoustic monitoring through few-shot learning. Our team developed an innovative approach to detect rare species vocalizations using minimal training data—a critical challenge in conservation biology where labeled data for endangered species is inherently scarce.
+The Challenge Traditional machine learning approaches require large amounts of labeled training data, which is often unavailable for rare or endangered species. The DCASE 2023 few-shot bioacoustic event detection task challenged participants to develop systems that could:</description>
+    </item>
+    
+    <item>
+      <title>ROaR</title>
+      <link>https://bencretois.github.io/projects/roar/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/roar/</guid>
+      <description>Did you hear that? What was that? The questions posed above immediately activate our minds, prompting quick answers like &amp;ldquo;It&amp;rsquo;s just a car on the road&amp;rdquo; or &amp;ldquo;That must be a rare bird.&amp;rdquo; Most of the time, we don&amp;rsquo;t even consciously ask or think about what we heard. We instinctively recognize the sound - whether it&amp;rsquo;s a car, a bird, or something else.
+Artificial intelligence (AI) is also capable of recognizing sounds automatically, but teaching this skill to AI is often not feasible.</description>
+    </item>
+    
+    <item>
+      <title>ecoVAD</title>
+      <link>https://bencretois.github.io/projects/ecovad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/ecovad/</guid>
+      <description>Overview ecoVAD (ecological Voice Activity Detection) is a specialized machine learning tool designed to automatically identify and segment vocal activity in ecological soundscape recordings. Unlike traditional VAD systems designed for human speech, ecoVAD is optimized for the diverse vocalizations found in natural environments.
+The Problem Ecological soundscape analysis typically involves processing hours or days of continuous audio recordings. Manually identifying vocal activity is:
+Time-consuming: Researchers spend countless hours manually annotating recordings Inconsistent: Human annotators may have different criteria for what constitutes vocal activity Expensive: Manual annotation costs limit the scale of possible studies Subjective: Difficult to maintain consistent standards across different researchers Solution ecoVAD automates the detection of vocal activity using deep learning techniques specifically adapted for ecological audio:</description>
+    </item>
+    
+    <item>
+      <title>Snowmobile detector</title>
+      <link>https://bencretois.github.io/projects/snowmobile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/snowmobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ForPEAT</title>
+      <link>https://bencretois.github.io/projects/forpeat/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/forpeat/</guid>
+      <description>ForPeat is an ambitious research project that will advance science-based approaches to optimise the management of forested peatland. At its core, the project will showcase innovative, sustainable forest practices and nature restoration goals on peat soils, focusing on rewetting and water conservation techniques.
+🌿 Core Objectives These demonstrations will serve as Open Labs, illustrating how to balance climate positivity with biodiversity enhancement. A key aspect of ForPeat assesses the carbon sequestration benefits of forested peatlands in relation to their management and how forest harvesting impacts:</description>
+    </item>
+    
+    <item>
+      <title>FishPath</title>
+      <link>https://bencretois.github.io/projects/fishpath/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/fishpath/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BEATs trainer</title>
+      <link>https://bencretois.github.io/projects/beats_trainer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/beats_trainer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CarbonViewer</title>
+      <link>https://bencretois.github.io/projects/carbonviewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/carbonviewer/</guid>
+      <description>Overview CarbonViewer is an interactive R Shiny web application that enables researchers, land managers, and policymakers to calculate and visualize carbon storage in peatland ecosystems. This tool bridges the gap between complex scientific models and practical conservation decision-making.
+The Carbon Storage Challenge Peatlands are among the world&amp;rsquo;s most important carbon reservoirs, storing approximately one-third of global soil carbon despite covering only 3% of Earth&amp;rsquo;s surface. Accurate assessment of peatland carbon storage is crucial for:</description>
+    </item>
+    
+    <item>
+      <title>TABMON Dashboard</title>
+      <link>https://bencretois.github.io/projects/tabmon_dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/tabmon_dashboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BEAGLE</title>
+      <link>https://bencretois.github.io/projects/beagle/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/beagle/</guid>
+      <description>I co-lead a work package in BEAGLE, an EU Horizon project extending biodiversity data collection across all modalities — environmental DNA (eDNA), acoustics, and camera traps. By combining these complementary data sources with AI, we aim to build a more complete picture of biodiversity status and trends to support conservation and policy decisions at a European scale.</description>
+    </item>
+    
+    <item>
+      <title>HABLOSS</title>
+      <link>https://bencretois.github.io/projects/habloss/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencretois.github.io/projects/habloss/</guid>
+      <description>HABLOSS is a research project where we are studying nature habitat loss using remote sensing data. By combining satellite imagery with AI methods, we aim to track habitat degradation and loss over time to better understand and mitigate its impact on biodiversity.</description>
+    </item>
+    
+  </channel>
+</rss>

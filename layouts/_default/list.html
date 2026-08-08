@@ -13,13 +13,13 @@
 
     {{ if eq .Section "projects" }}
 
-    <!-- Present Projects -->
-    {{ $presentProjects := where .Pages "Params.status" "present" }}
-    {{ if $presentProjects }}
+    <!-- Funded Projects -->
+    {{ $fundedProjects := where .Pages "Params.funded" true }}
+    {{ if $fundedProjects }}
     <section class="projects-section">
-        <h2 class="section-heading">🚀 Present Projects</h2>
+        <h2 class="section-heading">🚀 Funded Projects</h2>
         <div class="projects-grid">
-            {{ range $presentProjects }}
+            {{ range sort $fundedProjects "Params.weight" }}
             <div class="project-card">
                 {{ if .Params.category }}
                 <span class="project-category">{{ .Params.category }}</span>
@@ -57,13 +57,13 @@
     </section>
     {{ end }}
 
-    <!-- Past Projects -->
-    {{ $pastProjects := where .Pages "Params.status" "past" }}
-    {{ if $pastProjects }}
+    <!-- Coding Projects -->
+    {{ $codingProjects := where .Pages "Params.funded" "!=" true }}
+    {{ if $codingProjects }}
     <section class="projects-section">
-        <h2 class="section-heading">📚 Past Projects</h2>
+        <h2 class="section-heading">💻 Coding Projects</h2>
         <div class="projects-grid">
-            {{ range $pastProjects }}
+            {{ range sort $codingProjects "Params.weight" }}
             <div class="project-card">
                 {{ if .Params.category }}
                 <span class="project-category">{{ .Params.category }}</span>
@@ -100,6 +100,39 @@
         </div>
     </section>
     {{ end }}
+
+    <!-- Student Supervision -->
+    <section class="supervision-section">
+        <h2 class="section-heading">🎓 Student Supervision</h2>
+        <div class="supervision-group">
+            <h3><i class="fas fa-user-graduate"></i> PhD Co-supervision</h3>
+            <div class="supervision-item">
+                <div class="supervision-title">Julia Wiel <span class="supervision-badge">2024–present</span></div>
+                <p>
+                    Standardisation of passive acoustic monitoring methods, including detection space modelling around
+                    acoustic recorders and development of metadata standards for large-scale PAM networks.
+                </p>
+            </div>
+        </div>
+        <div class="supervision-group">
+            <h3><i class="fas fa-graduation-cap"></i> Master's Students</h3>
+            <div class="supervision-item">
+                <div class="supervision-title">Ida Serine Bjørgo &amp; Hedda Dahle <span class="supervision-badge">NTNU · June 2026</span></div>
+                <p>
+                    <em>Pretrained Audio Embedding Models for Sound Event Detection of Arctic Fox Vocalisations</em> —
+                    Master's thesis in Electronics Systems Design and Innovation. Supervisor: Guillaume Dutilleux;
+                    Co-supervisor: Benjamin Cretois.
+                </p>
+            </div>
+            <div class="supervision-item">
+                <div class="supervision-title">Pierre Bosman <span class="supervision-badge">Université de Liège</span></div>
+                <p>
+                    <em>Passive acoustic monitoring as a complementary approach to assess phenology in bird migration</em> —
+                    AgroBioTech.
+                </p>
+            </div>
+        </div>
+    </section>
 
     {{ end }}
 </div>

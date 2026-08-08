@@ -4,6 +4,7 @@ description: "Creating models that can generalise to other classes with not much
 category: "Machine learning"
 date: 2024-01-01
 status: "present"
+funded: true
 tags: ["AI", "machine learning", "transfer learning", "acoustic monitoring", "sound recognition"]
 website: "https://www.sintef.no/en/projects/2025/roar-robust-acoustic-recognition/"
 weight: 2
