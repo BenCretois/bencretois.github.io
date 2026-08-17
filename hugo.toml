@@ -24,6 +24,10 @@ title = 'Benjamin Cretois'
     name = 'Publications'
     url = 'https://scholar.google.com/citations?user=40ZX7XUAAAAJ&hl=en&oi=ao'
     weight = 3
+  [[menu.main]]
+    name = 'CV'
+    url = 'https://github.com/BenCretois/my_cv/raw/main/cv_v4.pdf'
+    weight = 4
 
 [markup]
   [markup.goldmark]
